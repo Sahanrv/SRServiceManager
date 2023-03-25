@@ -14,7 +14,7 @@ public protocol HTTPClient {
 }
 
 @available(iOS 15.0, *)
-extension HTTPClient {
+public extension HTTPClient {
     func sendRequest<T: Decodable>(
         endpoint: Endpoint,
         responseModel: T.Type
