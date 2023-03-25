@@ -8,8 +8,8 @@
 import Foundation
 
 public protocol Endpoint {
-    var scheme: String { get set}
-    var host: String { get set}
+    var scheme: String { get }
+    var host: String { get }
     var path: String { get }
     var method: RequestMethod { get }
     var header: [String: String]? { get }
@@ -22,7 +22,7 @@ public extension Endpoint {
     }
 
     var host: String {
-        return "api.themoviedb.org"
+        return "google.com"
     }
 }
 
